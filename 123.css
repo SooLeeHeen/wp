@@ -1,0 +1,131 @@
+/* 123.css */
+
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Menggunakan font yang lebih modern */
+}
+
+/* CSS untuk background video */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7; /* Transparansi video untuk tampilan lebih lembut */
+}
+
+/* Gaya konten di atas video */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    color: #333;
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+    background: none;
+    overflow-x: hidden;
+}
+
+/* Gaya judul */
+h1 {
+    font-size: 2.5em;
+    color: #ffffff; /* Ubah warna judul menjadi putih */
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0 #000, 0 0 25px rgba(255, 255, 255, 0.5); /* Efek teks hitam yang lebih jelas */
+}
+
+/* Gaya paragraf */
+p {
+    font-size: 1.2em; /* Meningkatkan ukuran font */
+    margin-bottom: 15px;
+    color: #ffffff; /* Ubah warna paragraf menjadi putih */
+    text-align: center;
+    text-shadow: 2px 2px 0 #000, 0 0 15px rgba(255, 255, 255, 0.5); /* Efek teks hitam yang lebih jelas */
+}
+
+/* Gaya daftar biodata */
+.container {
+    display: flex; /* Menggunakan flexbox untuk menempatkan gambar dan biodata */
+    align-items: center; /* Vertically center */
+    background-color: rgba(255, 255, 255, 0.8); /* Background putih transparan */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 15px auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0 20px; /* Menambahkan padding horizontal */
+    margin: 0; /* Menghapus margin default */
+    color: #333; /* Hitam untuk teks biodata */
+}
+
+ul li {
+    font-size: 1.1em; /* Meningkatkan ukuran font untuk biodata */
+    margin-bottom: 10px;
+    color: #333; /* Hitam untuk teks biodata */
+    font-weight: 500; /* Meningkatkan ketebalan font */
+}
+
+ul li strong {
+    color: #2c3e50; /* Warna untuk label biodata */
+}
+
+/* Gaya gambar */
+img {
+    border-radius: 8px;
+    width: 150px; /* Mengatur lebar gambar */
+    height: auto; /* Otomatis menjaga proporsi */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya footer */
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #777;
+    padding-top: 10px;
+    text-align: center;
+    max-width: 320px;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    .container {
+        flex-direction: column; /* Mengubah arah untuk tampilan kecil */
+        align-items: center; /* Center items */
+    }
+    ul {
+        padding: 15px;
+    }
+    img {
+        width: 100%;
+        max-width: 180px;
+    }
+}
